@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albert</title>
-    
-</head>
-
-       
-    
-<body>
-    <h1>Meet Albert your physics asisstant</h1> 
-   
-    <a href="chatbot.html" class="chat-link">
-        <img src="chat-icon.png" class="chat-icon">
-    </a>
-    
-    <img src="bot.png" id="bot" alt="">
-    <style>
-        body{
-            background-color:#c090df;;
-        }
-        h1{
-            color: antiquewhite;
-            text-align: center;
-            margin-top: 100px;
-           
-        }
-        #bot{
-            margin-left: 10% ;
-            align-self: center;
-            width: 650px;
-            height: 500px;
-            position: absolute;
-            
-            left: 10%;
-            top: 150px;
-        }
-        .chat-link {
-    position: absolute;
-    top: 150px;
-    left: 45%;
-    z-index: 10;
-}
-
-.chat-icon {
-    width: 50px; /* Example width */
-    height: auto;
-}
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-body {
-   font-family: 'Pacifico', cursive; 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albert</title>
  
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 400;
-  line-height: 1.58;
-  letter-spacing: -.003em;
-  font-size: 20px;
-  padding: 80px;
-}
+  <style>
+    /* General Styling */
+    body {
+      background-color: #c090df;
+      font-family: 'Pacifico', cursive;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 400;
+      line-height: 1.58;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Full viewport height */
+    }
 
-/* h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 38px;
-  line-height: 1.15;
-  letter-spacing: -.02em;
-  color: rgba(0, 0, 0, 0.8);
-  -webkit-font-smoothing: antialiased;
-} */
+    /* Header Styling */
+   
+     
 
-    </style>
-<script src="script.js"></script> 
+    h6 {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Chat Icon and Link */
+    .chat-link {
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      color: antiquewhite;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px; /* Spacing between text and icon */
+      margin-bottom: 20px;
+    }
+
+    .chat-icon {
+      width: 25px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    /* Chatbot Styling */
+    #bot {
+      width: 650px;
+      height: 500px;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+      
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      
+
+      h6 {
+        font-size: 16px;
+      }
+
+      #bot {
+        width: 80%;
+        height: 400px;
+      }
+
+      .chat-icon {
+        width: 20px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h6 {
+        font-size: 14px;
+      }
+
+      #bot {
+        width: 100%;
+        height: 300px;
+      }
+
+      .chat-icon {
+        width: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <h6 id="message-to-chat">
+    Meet Albert
+  </h6>
+  <a href="chatbot.html" class="chat-link" target="_blank">
+    Click here to chat  <img src="chat-icon.png" class="chat-icon" alt="Chat Icon">
+  </a>
+  <img src="bot.png" id="bot" alt="Albert Bot">
 </body>
 </html>
