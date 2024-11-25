@@ -25,7 +25,7 @@ let text=aiChatBox.querySelector(".ai-chat-area")
         body:JSON.stringify({
             "contents":[
                 {"parts":[
-                    { text: "You are a Physics Assistant. Your job is to explain physics concepts, solve problems, and answer questions accurately." },
+                    { text: "You are a Physics Assistant. Your job is to explain physics concepts, solve problems, and answer questions accurately SIMPLY and concisely. " },
                     {text:user.message},(user.file.data?[{inline_data:user.file}]:[])
 
                 ]
